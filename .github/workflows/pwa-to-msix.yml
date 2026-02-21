@@ -9,7 +9,7 @@ jobs:
 
     steps:
       - name: Build PWA package for Microsoft Store
-        uses: pwabuilder/pwa-github-action@v1
+        uses: microsoft/pwa-studio-action@v1
         with:
           url: https://app.sawu.pt
           platform: windows
