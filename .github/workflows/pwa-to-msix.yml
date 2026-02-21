@@ -1,0 +1,15 @@
+name: Build SawU PWA for Microsoft Store
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Build PWA package for Microsoft Store
+        uses: pwabuilder/pwabuilder-action@v2
+        with:
+          url: https://app.sawu.pt
+          platform: windows
