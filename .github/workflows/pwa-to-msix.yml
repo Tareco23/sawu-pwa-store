@@ -9,7 +9,10 @@ jobs:
 
     steps:
       - name: Build PWA package for Microsoft Store
-        uses: pwabuilder/pwabuilder-action@v2
+        uses: pwabuilder/pwa-github-action@v1
         with:
           url: https://app.sawu.pt
           platform: windows
+          packageId: pt.sawu.app
+          publisher: CN=d6367a04-4200-4bfe-a197-5fff442f0522
+          publisherDisplayName: SawU
